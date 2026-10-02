@@ -1,0 +1,31 @@
+body{
+    font-family:'Times New Roman', Times, serif;
+
+}
+.center-image{
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+}
+#title-header{
+    font-size: 100px;
+}
+.center-text{
+    text-align: center;
+}
+header{
+    /* flex display allows child elements to be easily sized to fit containers and place multiple elements on the same row*/
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 300px;
+}
+.navbar{
+    display: flex;
+    position:relative;
+}
+.nav-list {
+    list-style-type:none;
+}
