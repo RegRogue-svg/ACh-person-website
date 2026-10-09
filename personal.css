@@ -21,3 +21,18 @@
     display: flex;
     gap: 15px;
 }
+.center-image-figure {
+    display:flex ;
+    flex-direction: column;  /* Sets object orient to be vertical*/
+    justify-content:center;
+    align-items: center;
+}
+.LEGO-image {
+    height: 300px;
+    width: 400px;
+}
+.souvenir-image {
+    display: block;
+    height: 700px;
+    width: 1400px;
+}
