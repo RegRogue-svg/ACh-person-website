@@ -1,3 +1,4 @@
+<!-- This page contains the contact form to send questions and messages to me once I actually link it to something-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,13 @@
     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
+    <!-- I used a div to section off the whole form so that I can place the form "card" relatively in the center of the page.-->
     <div id="form-container">
     <h1 class="header">Contact Me</h1>
     <form>
+        <!-- Each input method is accompanied by its own label to emphasize what the input needs-->
         <label for="Full name">Full Name</label>
+        <!-- id is for the code to identify the input, while name is for the browser to identify the input-->
         <input class="text-box" type="text" id="name" name="name" required placeholder="Put your full name here">
 
         <label for="email">Email</label>
@@ -21,6 +25,7 @@
         <textarea id="message" name="message" rows="5" required placeholder="Your message/question..."></textarea>
         
         <h2 class="header">Are you interested in any of these?</h2>
+        <!-- For every checkbox I used a div to section each check box out as well as giving the div elements the display:flex in CSS to force the 2 elements on the same line-->
         <div class="checkbox">
         <input type="checkbox" id="lego" name="lego" value="yes">
         <label for="lego">LEGO Building</label>
@@ -42,6 +47,8 @@
         <label for="Civ4">Civilization 4</label>
         </div>
         <br>
+
+        <!-- Right now, as Dr R said, this button does nothing, but it's usually supposed to send the form request in.-->
         <button type="submit">Send</button>
     </form>
     </div>
