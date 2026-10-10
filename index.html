@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alex Chen: beginner web developer</title>
+    <!--Linking with CSS files-->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="universal.css">
 </head>
 
 <body>
+    <!-- NAV BAR -->
     <nav class="navbar">
         <div class="navbar-header">
             <h1 class="header">Alex Chen</h1>
         </div>
+        <!-- Creating unordered list to contain list options on the nav bar (not within options) -->
         <ul class="nav-list">
             <li class="dropdown-host">
                 <h2 class="dropdown-title">Learn about me</h2>
+                <!-- Creating list for options inside of an option inside navbar -->
                 <ul class="nav-list dropdown-menu">
                     <li>
                         <p><a class="nav-option" href="academic.html">Academically</a></p>
@@ -29,25 +33,29 @@
         </ul>
     </nav>
     <hr>
+    <!-- this contains all of the content in this page-->
     <div id="body-container">
+        <!-- Main selfie image of the website -->
         <img class="center-image" src="Great_Wall_Selfie.png" alt="A selfie of me at the Great Wall of China!">
+        <!-- I used div elements to group elements toghether, especially when I want to put multiple elemnts next to a single img element-->
         <div id="text-section">
             <header>
                 <h1 class="header" id="title-header" class="center-text">Well hello there!</h1>
             </header>
             <section id="about-me" class="center-text">
                 <h2 class="center-text header">Who am I?</h2>
+                <!-- Introduction paragraph -->
                 <p class="center-text">Hi there! My name is Alex Chen. I am currently a sophomore at the Village School
-                    that
-                    has only just started in web development!
+                    that has only just started in web development!
                     Althogh I was born here, I am a both a second and third-generation immigrant from the People's
-                    Republic
-                    of China, blending the two cultures into my cultural identity.
+                    Republic of China, blending the two cultures into my cultural identity.
                 </p>
                 <h2 class="header">Learn more about me...</h2>
+                <!-- A place to navigate to other pages other than the nav bar. Naturally guides user to other pages-->
                 <a class="link" href="academic.html">Academically</a>
                 <a class="link" href="personal.html">Personally</a>
             </section>
+            <!-- This link leads to the contact form, which opens on a different tab.-->
             <section id="contact-me">
                 <h2 class="center-text"><a href="contact.html" target="_blank">Contact Me</a></h2>
             </section>
