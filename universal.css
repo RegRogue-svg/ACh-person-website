@@ -1,5 +1,65 @@
+/*This file is for CSS code that I would like to apply to all pages*/
 body{
     font-family:'Times New Roman', Times, serif;
-
 }
-
+p {
+    font-size: 20px;
+}
+figcaption {
+    font-size: 15px;
+}
+html{
+    background-color:#0f0E47;
+    color: #8686AC;
+}
+.header {
+    color:lightblue;
+}
+hr {
+    color: lightblue;
+}
+/*NAV BAR*/
+.navbar{
+    display: flex;
+    position:relative;
+    gap: 15px;
+}
+.nav-list {
+    list-style-type:none; /* sets it so that there's no list "dot"*/
+}
+.dropdown-host {
+    position: relative; /* positions the dropdown menu to be under this html element*/
+}
+.dropdown-title {
+    cursor: pointer;
+}
+/*places arrow after header*/
+.dropdown-title::after {
+    content:" ▼";
+    font-size: 20px;
+    opacity: 0.9;
+}
+.dropdown-menu {
+    display: none; /*display: none sets it to not be visible at the beginning*/
+    position: absolute; /*once this thing gets displayed, this will make it hover over the website rather than pushing the website down*/
+    top: 100%; /*positions the menu to be right under the navbar*/
+    background-color: #505081;
+    padding-top: 10px;
+    min-width: 160px;
+}
+.dropdown-menu li a {
+    display: block;
+    padding: 10px 20px;
+    color: black;
+}
+.dropdown-menu li a:hover { /*Changes background and text color of options when hovered over*/
+    background-color: gray;
+    color: white;
+}
+.dropdown-host:hover .dropdown-menu { /*shows menu when hovered over*/
+    display:block;
+}
+.navbar-header {
+    margin-right: 50px;
+    margin-left: 60px;
+}

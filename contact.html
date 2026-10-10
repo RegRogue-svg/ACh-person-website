@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="universal.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div id="form-container">
+    <h1 class="header">Contact Me</h1>
+    <form>
+        <label for="Full name">Full Name</label>
+        <input class="text-box" type="text" id="name" name="name" required placeholder="Put your full name here">
+
+        <label for="email">Email</label>
+        <input class="text-box" type="text" id="email" name="email" required placeholder="Put your email address here">
+
+        <label for="message">Any questions? Messages?</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Your message/question..."></textarea>
+        
+        <h2 class="header">Are you interested in any of these?</h2>
+        <div class="checkbox">
+        <input type="checkbox" id="lego" name="lego" value="yes">
+        <label for="lego">LEGO Building</label>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" id="d4" name="d4" value="yes">
+        <label for="d4">Diablo 4</label>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" id="d3" name="d3" value="yes">
+        <label for="d3">Diablo 3</label>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" id="Lost-Ark" name="Lost-Ark" value="yes">
+        <label for="Lost-Ark">Lost Ark</label>
+        </div>
+        <div class="checkbox">
+        <input type="checkbox" id="Civ4" name="Civ4" value="yes">
+        <label for="Civ4">Civilization 4</label>
+        </div>
+        <br>
+        <button type="submit">Send</button>
+    </form>
+    </div>
+</body>
+</html>

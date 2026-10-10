@@ -1,15 +1,36 @@
-
+/*This file is for specific CSS code for the about/home page*/
+#body-container {
+    display: flex;
+    align-items: flex-start;
+    gap: 70px;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#text-section {
+    display: inline-block;
+    justify-content: center;
+}
+#text-section h2 {
+    font-size: 36px;
+}
+#text-section p {
+    font-size: 20px;
+}
 .center-image{
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
 }
 #title-header{
-    font-size: 100px;
+    font-size: clamp(40px, 4vw ,200px); /*clamp gives dynamic size scaling to the title*/
 }
 .center-text{
     text-align: center;
+}
+#contact-me h2 a{
+    color: #8686AC;
 }
 header{
     /* flex display allows child elements to be easily sized to fit containers and place multiple elements on the same row*/
@@ -19,39 +40,12 @@ header{
     justify-content: center;
     gap: 300px;
 }
-
-/*NAV BAR*/
-.navbar{
-    display: flex;
-    position:relative;
-    gap: 15px;
+#about-me p {
+    max-width: 700px;
+    margin:auto;
 }
-.nav-list {
-    list-style-type:none; /* sets it so that there's no list "dot"*/
-}
-.dropdown-host {
-    position: relative; /* positions the dropdown menu to be under this html element*/
-}
-.dropdown-menu {
-    display: none; /*display: none sets it to not be visible at the beginning*/
-    position: absolute; /*once this thing gets displayed, this will make it hover over the website rather than pushing the website down*/
-    top: 100%; /*positions the menu to be right under the navbar*/
-    background-color: white;
-    padding-top: 10px;
-    min-width: 160px;
-}
-.dropdown-menu li a {
-    display: block;
-    padding: 10px 20px;
-    color: black;
-}
-.dropdown-menu li a:hover { /*Changes background and text color of options when hovered over*/
-    background-color: gray;
-    color: white;
-}
-.dropdown-host:hover .dropdown-menu { /*shows menu when hovered over*/
-    display:block;
-}
-.navbar-header {
-    margin-right: 50px;
+#about-me a {
+    margin: 0 20px;
+    color: #8686AC;
+    font-size: 20px;
 }

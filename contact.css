@@ -1,0 +1,24 @@
+html {
+    background-color:cadetblue;
+}
+#form-container {
+    padding: 30px;
+    border-radius: 8px;
+    background-color:#0f0E47;
+    margin: auto;
+    margin-top: 4%;
+    width: 25%;
+    height: 60%;
+}
+label {
+    display:block;
+    margin: 4px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.checkbox {
+    display: flex;
+}
+.text-box, textarea {
+    width: 100%;
+}

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,40 +8,51 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="universal.css">
 </head>
+
 <body>
     <nav class="navbar">
         <div class="navbar-header">
-            <h1>Alex Chen</h1>
+            <h1 class="header">Alex Chen</h1>
         </div>
         <ul class="nav-list">
             <li class="dropdown-host">
-                <h2>Learn about me</h2>
+                <h2 class="dropdown-title">Learn about me</h2>
                 <ul class="nav-list dropdown-menu">
-                    <li><p><a class="nav-option" href="academic.html">Academically</a></p></li>
-                    <li><p><a class="nav-option" href="personal.html">Personally</a></p></li>
+                    <li>
+                        <p><a class="nav-option" href="academic.html">Academically</a></p>
+                    </li>
+                    <li>
+                        <p><a class="nav-option" href="personal.html">Personally</a></p>
+                    </li>
                 </ul>
             </li>
         </ul>
     </nav>
     <hr>
-    <header>
-        <img class="center-image" src="Great_Wall_Selfie.png" alt="A selfie of me at the Great Wall of China!"><h1 id="title-header" class="center-text">Well hello there!</h1>
-    </header>
-    <hr>
-    <section id="about-me" class="center-text">
-        <h2 class="center-text">Who am I?</h2>
-        <p class="center-text">Hi there! My name is Alex Chen. I am currently a sophomore at the Village School that has only just started in web development!
-            Althogh I was born here, I am a both a second and third-generation immigrant from the People's Republic of China, blending the two cultures into my cultural identity.
-        </p>
-        <h2>Learn more about me...</h2>
-        <a class="link" href="academic.html">Academically</a> <a class="link" href="personal.html">Personally</a>
-    </section>
-    <hr>
-    <section id="friends" class="center-text">
-        <!--I don't know what else to put here that I plan to put in other pages, so I decided to have a section of my classmates' websites!-->
-        <h2>Who do I know?</h2>
-        <h3>I have many classmates with similar interests and experience in web development. Once you're done with learning about me, take a look at what they have to offer!</h3>
-        <!--Descriptions of classmates and links to their personal webpages-->
-    </section>
+    <div id="body-container">
+        <img class="center-image" src="Great_Wall_Selfie.png" alt="A selfie of me at the Great Wall of China!">
+        <div id="text-section">
+            <header>
+                <h1 class="header" id="title-header" class="center-text">Well hello there!</h1>
+            </header>
+            <section id="about-me" class="center-text">
+                <h2 class="center-text header">Who am I?</h2>
+                <p class="center-text">Hi there! My name is Alex Chen. I am currently a sophomore at the Village School
+                    that
+                    has only just started in web development!
+                    Althogh I was born here, I am a both a second and third-generation immigrant from the People's
+                    Republic
+                    of China, blending the two cultures into my cultural identity.
+                </p>
+                <h2 class="header">Learn more about me...</h2>
+                <a class="link" href="academic.html">Academically</a>
+                <a class="link" href="personal.html">Personally</a>
+            </section>
+            <section id="contact-me">
+                <h2 class="center-text"><a href="contact.html" target="_blank">Contact Me</a></h2>
+            </section>
+        </div>
+    </div>
 </body>
+
 </html>

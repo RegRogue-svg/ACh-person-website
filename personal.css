@@ -1,11 +1,37 @@
+/*This file is for CSS code that applies specifically to the personal page*/
+body {
+    font-size: 20px;
+}
+
+#hobby-list,
+.LEGO,
+.video-games,
+.travel {
+    margin-right: 6%;
+    margin-left: 6%;
+}
+
+h1 {
+    justify-content: center;
+}
+
+li {
+    font-size: 20px;
+}
+
 .nav-option {
     display: inline;
     margin: 10px 20px;
 }
 
 .nav-option a {
-    color: black;
+    color: #8686AC;
     text-decoration: none;
+}
+
+.navbar-header h1 {
+    margin-bottom: 10px;
+    margin-top: 0px;
 }
 
 .nav-option a:hover {
@@ -13,26 +39,57 @@
     background-color: black;
 }
 
-.navbar-header h1 {
-    display: inline;
+#navbar-content {
+    justify-content: center;
 }
 
 .navbar {
     display: flex;
     gap: 15px;
 }
+
 .center-image-figure {
-    display:flex ;
-    flex-direction: column;  /* Sets object orient to be vertical*/
-    justify-content:center;
+    display: flex;
+    flex-direction: column;
+    /* Sets object orient to be vertical*/
+    justify-content: center;
     align-items: center;
 }
+
 .LEGO-image {
     height: 300px;
     width: 400px;
 }
+
 .souvenir-image {
     display: block;
     height: 700px;
     width: 1400px;
+}
+
+#USSMissouri-img img {
+    height: 400px;
+    width: 400px;
+}
+
+.video-games a {
+    color: aqua;
+}
+
+.game-logo {
+    width: 40%;
+    height: 40%;
+}
+
+#game-description {
+    display: flex;
+    flex-direction: column;
+}
+
+#Diablo-4,
+#Diablo-3,
+#Lost-Ark,
+#Civ-4 {
+    display: flex;
+    gap: 4%;
 }
